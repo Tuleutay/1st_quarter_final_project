@@ -11,3 +11,15 @@ if (!isParsed)
     return;
 }
 Console.WriteLine("Введите данные");
+string[] ArrayWithСondition = InputArray(strCount);
+
+
+string[] InputArray(int strCount)
+{
+    string[] array = new string[strCount];
+    for (int i = 0; i < strCount; i++)
+    {
+        array[i] = Console.ReadLine();
+    }
+    return array;
+}
