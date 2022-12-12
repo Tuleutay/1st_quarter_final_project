@@ -12,7 +12,7 @@ if (!isParsed)
 }
 Console.WriteLine("Введите данные");
 string[] ArrayWithСondition = InputArray(strCount);
-
+PrintArrayWithСondition(ArrayWithСondition);
 
 string[] InputArray(int strCount)
 {
@@ -22,4 +22,15 @@ string[] InputArray(int strCount)
         array[i] = Console.ReadLine();
     }
     return array;
+}
+void PrintArrayWithСondition(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        string str = array[i];
+        if (str.Length <= 3 & str.Length > 0)
+        {
+            Console.Write($"{array[i]}, ");
+        }
+    }
 }
