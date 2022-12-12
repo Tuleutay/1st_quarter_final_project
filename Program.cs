@@ -4,12 +4,12 @@
 Console.WriteLine("Введите количество строк");
 
 bool isParsed = int.TryParse(Console.ReadLine(), out int strCount);
-
 if (!isParsed)
 {
     Console.WriteLine("Не правильно введены данные");
     return;
 }
+
 Console.WriteLine("Введите данные");
 string[] ArrayWithСondition = InputArray(strCount);
 PrintArrayWithСondition(ArrayWithСondition);
